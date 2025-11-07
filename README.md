@@ -28,6 +28,3 @@ This educational demonstration showcases advanced persistence techniques through
 - **🎯 Command & Control**: Full system control via Meterpreter
 
 
-
-📧 Email: your.email@domain.com
-🐙 GitHub: [Your GitHub Profile URL]
