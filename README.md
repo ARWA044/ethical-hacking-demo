@@ -28,7 +28,7 @@ This educational demonstration showcases advanced persistence techniques through
 - **🎯 Command & Control**: Full system control via Meterpreter
 
 
-### Educational Setup
+## Educational Setup
 
 # Clone repository
 git clone https://github.com/yourusername/cybersecurity-lab.git
